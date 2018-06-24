@@ -18,7 +18,7 @@ def take_a_number(katz_deli, customer_name)
     katz_deli << customer_name
   end
 
-#if line is empty, add name to line and welcome 
+#if line is empty, add name to line and welcome
 #line can build
-  
+
 end
