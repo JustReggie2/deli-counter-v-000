@@ -20,7 +20,7 @@ def take_a_number(katz_deli, customer_name)
       puts "Welcome, #{customer}. You are number #{index+1} in line."
     end
   elsif katz_deli != [] && customer_name != ""
-    katz_deli << customer_name 
+    katz_deli << customer_name
     index = katz_deli.size
     puts "Welcome, #{customer_name}. You are number #{index} in line."
   else katz_deli != [] && customer_name != ""
