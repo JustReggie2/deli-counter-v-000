@@ -17,7 +17,8 @@ def take_a_number(katz_deli, customer_name)
   if katz_deli == []
     katz_deli << customer_name
     puts "Welcome, #{customer_name}. You are number 1 in line."
-  else katz_deli << customer_name
+  else katz_deli.length >= 1
+    katz_deli << customer_name
     katz_deli.each_with_index do |customer, index|
       puts "Welcome, #{customer}. You are number #{index+1} in line."
     end
