@@ -24,7 +24,6 @@ def take_a_number(katz_deli, customer_name)
     index = katz_deli.size
     puts "Welcome, #{customer_name}. You are number #{index} in line."
   else katz_deli != [] && customer_name != ""
-    #katz_deli.length >= 1
     katz_deli << customer_name
     katz_deli.each_with_index do |customer, index|
       puts "Welcome, #{customer}. You are number #{index+1} in line."
@@ -32,7 +31,11 @@ def take_a_number(katz_deli, customer_name)
   end
 end
 
-
-
-#if line is empty, add name to line and welcome
-#line can build
+def now_serving(katz_deli)
+  if katz_deli != []
+    next = katz_deli.shift
+    puts "Currently serving #{next}."
+  else
+    puts "There is nobody waiting to be served!"
+  end
+end
