@@ -14,4 +14,11 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, customer_name)
+  if katz_deli == []
+    katz_deli << customer_name
+  end
+
+#if line is empty, add name to line and welcome 
+#line can build
+  
 end
